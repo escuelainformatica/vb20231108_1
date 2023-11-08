@@ -43,6 +43,7 @@ Cuando hace click en el boton, haga lo siguiente.
 * Guarde los cambios
 * Y muestre los datos de la grilla.
 
+Ejemplo: (con cliente)
 ```vbnet
 ' crear un cliente
 Dim cli As New Cliente()
@@ -59,9 +60,6 @@ Using contexto As New BaseContext()
     clientes = contexto.Clientes.ToList()
     DataGridView1.DataSource = clientes
 End Using
-PanelListado.Visible = True
-PanelEditar.Visible = False
-PanelFormulario.Visible = False
 ```
 
  
